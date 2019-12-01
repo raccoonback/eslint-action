@@ -2,6 +2,6 @@
 
 set -e
 
-npm install
+npm install ${BASE_DIR:-.}
 
-NODE_PATH=node_modules node /action/lib/run.js
+NODE_PATH=${BASE_DIR}/node_modules node /action/lib/run.js
